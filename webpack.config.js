@@ -7,9 +7,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'RESTAURANT-PAGE',
       template: './src/index.html',
+      inject:'body'
     }),
   ],
-module: {
+  module: {
     rules: [
       {
         test: /\.css$/i,
@@ -29,6 +30,6 @@ module: {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-clean: true
+    clean: true
   },
 };
