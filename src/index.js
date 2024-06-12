@@ -1,1 +1,7 @@
-console.log('ruunning succesfully!!!!!!!')
+console.log('ruunning succesfully!!!!!!!');
+import './style.css';
+
+
+function pageLoad(){
+    
+}
