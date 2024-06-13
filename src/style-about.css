@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFF4C9;
+    color: #333;
+    height: 100vh;
+
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'contact' 'timing';
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.About,.timing{
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 auto;
+    width:100% ;
+    padding: 5px;
+    background-color: #C7E78B;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+.About{
+    grid-area: 'contact';
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.timing{
+    grid-area: 'timing';
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-height: 200px;
+    align-items: center;
+}
+
+
+.timing h1,.timing h5{
+    flex: 1;
+    overflow: auto;
+    justify-self: center;
+    align-self:center;
+
+}
+
+.timing h5,.About h5{
+    margin-bottom: 50px;
+}
