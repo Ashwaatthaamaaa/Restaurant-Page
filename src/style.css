@@ -35,7 +35,6 @@
 }
 
 body {
-    background-color:none;
     padding: 0px; /* Soft Sage Green */
   }
 
@@ -45,7 +44,7 @@ nav{
     min-height: 80px;
     align-items: center;
     justify-content: space-around;
-font-weight: bolder;
+    font-weight: bolder;
     font-size: 30px;
 }
 
@@ -54,7 +53,7 @@ button{
     border: none;
     background-color: none;
     font-size: 70px;
-font-weight: bolder;
+    font-weight: bolder;
 }
 
 
