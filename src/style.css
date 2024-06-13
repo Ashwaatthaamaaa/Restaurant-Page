@@ -45,14 +45,16 @@ nav{
     min-height: 80px;
     align-items: center;
     justify-content: space-around;
+font-weight: bolder;
+    font-size: 30px;
 }
 
 button{
     all:unset;
     border: none;
     background-color: none;
-    font-size: 30px;
-
+    font-size: 70px;
+font-weight: bolder;
 }
 
 
