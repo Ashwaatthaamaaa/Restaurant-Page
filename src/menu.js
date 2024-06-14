@@ -107,7 +107,6 @@ export default function menu(){
         gridItem.appendChild(price);
         
     
-        console.log(src);
         img.src=src;
 
         //description.textContent="batter of rice"
