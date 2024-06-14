@@ -1,4 +1,4 @@
-console.log('running successfully!!!!!!!');
+
 import './style.css';
 import Home from './home.js';
 import About from './about.js';
