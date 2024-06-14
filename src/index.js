@@ -2,7 +2,7 @@ console.log('ruunning succesfully!!!!!!!');
 import './style.css';
 import Home from './home.js';
 import About from './about.js';
-
+import Menu from './menu.js';
 
 function pageLoad(){
     const content = document.querySelector('#content');
