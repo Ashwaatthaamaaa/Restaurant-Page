@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FFF4C9;
+    color: #333;
+    height: 100vh;
+
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+.home{
+    padding: 10px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'image image'
+    'image image'
+    'image image';
+    width: 100%;
+    gap: 10px;
+}
+
+.grid-item{
+    grid-area: 'image';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas: 
+    "align align"
+    "price price";
+    box-shadow: rgba(0, 0, 0, 0.05) -1px 0px 20px 13px;
+}
+.image{
+    grid-area: 'Image';
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.detail{
+    grid-area: 'detail';
+}
+
+.price{
+    grid-area: price;
+}
+
+.title{
+    font-family:'Honk', sans-serif;
+    font-size:2.5rem;
+    text-align:center;
+    line-height: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .description{
+    font-family: 'Nabla', system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+    background-color: black;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+
+.price{
+    font-family: 'Nabla', system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+    background-color: black;
+    border-radius: 10px;
+    width: 60%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 10px;
+
+}
+/* .detail{
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 45,
+      "SHLN" 50;
+  } */
+
+
+  .align{
+    grid-area: 'align';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+  }
