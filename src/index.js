@@ -15,8 +15,21 @@ function pageLoad(){
 
     content.appendChild(Home());
 
+home.addEventListener('click',()=>{
+        content.removeChild(content.lastChild);
+        content.appendChild(Home());
+    })
+
+    menu.addEventListener('click',()=>{
+        content.removeChild(content.lastChild);
+        content.appendChild(Menu());
+    })
 
 
+    about.addEventListener('click',()=>{
+        content.removeChild(content.lastChild);
+        content.appendChild(About());
+    })
 }
 
 pageLoad();
