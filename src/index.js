@@ -1,4 +1,4 @@
-console.log('ruunning succesfully!!!!!!!');
+console.log('running successfully!!!!!!!');
 import './style.css';
 import Home from './home.js';
 import About from './about.js';
@@ -10,12 +10,10 @@ function pageLoad(){
     const menu = document.querySelector('#menu');
     const about = document.querySelector('#about');
 
-    const current = home.textContent;
-
 
     content.appendChild(Home());
 
-home.addEventListener('click',()=>{
+    home.addEventListener('click',()=>{
         content.removeChild(content.lastChild);
         content.appendChild(Home());
     })
